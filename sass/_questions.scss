@@ -1,0 +1,382 @@
+.questions{
+    &.open{
+        .questions__part-1{
+            p{
+                display: flex;
+                visibility: visible;
+                align-items: center;
+                text-align: left;
+                max-width: 500px;
+                font-size: 17px;
+                color: $grayish-blue;
+                line-height: 1.9;
+                @media screen and (max-width:570px) {
+                    width: 320px;
+                }
+
+            }
+            .first-part{
+                span{
+                    &::after{
+                        display: none;
+                    }
+                    &::before{
+                        content: "";
+                        background-image: url("../images/icon-arrow2.svg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 18px;
+                        height: 12px;
+                        display: block;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    &.open2{
+        .questions__part-2{
+            p{
+                display: flex;
+                visibility: visible;
+                align-items: center;
+                text-align: left;
+                max-width: 500px;
+                color: $grayish-blue;
+                font-size: 17px;
+                line-height: 1.9;
+                @media screen and (max-width:570px) {
+                    width: 320px;
+                }
+            }
+            .first-part{
+                span{
+                    &::after{
+                        display: none;
+                    }
+                    &::before{
+                        content: "";
+                        background-image: url("../images/icon-arrow2.svg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 18px;
+                        height: 12px;
+                        display: block;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    &.open3{
+        .questions__part-3{
+            p{
+                display: flex;
+                visibility: visible;
+                align-items: center;
+                text-align: left;
+                max-width: 500px;
+                font-size: 17px;
+                color: $grayish-blue;
+                line-height: 1.9;
+                @media screen and (max-width:570px) {
+                    width: 320px;
+                }
+            }
+            .first-part{
+                span{
+                    &::after{
+                        display: none;
+                    }
+                    &::before{
+                        content: "";
+                        background-image: url("../images/icon-arrow2.svg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 18px;
+                        height: 12px;
+                        display: block;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    &.open4{
+        .questions__part-4{
+            p{
+                display: flex;
+                visibility: visible;
+                align-items: center;
+                text-align: left;
+                max-width: 500px;
+                font-size: 17px;
+                color: $grayish-blue;
+                line-height: 1.9;
+                @media screen and (max-width:570px) {
+                    width: 320px;
+                }
+            }
+            .first-part{
+                span{
+                    &::after{
+                        display: none;
+                    }
+                    &::before{
+                        content: "";
+                        background-image: url("../images/icon-arrow2.svg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 18px;
+                        height: 12px;
+                        display: block;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    &__all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        h2{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        p{
+            color: $grayish-blue;
+            font-size: 17px;
+            width: 60%;
+            text-align: center;
+            @media screen and (max-width:570px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-1{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 35px;
+            border-bottom: 1px solid $verydark-blue;
+            border-top: 1px solid $verydark-blue;
+            @media screen and (max-width:570px) {
+                width: 320px;
+                border-top: none;
+            }
+            span{
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    background-image: url("../images/icon-arrow.svg");
+                    width: 18px;
+                    height: 12px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+            }
+            .first-part{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 500px;
+                @media screen and (max-width:570px) {
+                    width: 320px;
+                }
+                h4{ 
+                    cursor: pointer;
+                    color: $verydark-blue;
+                    transition: 100ms ease-in-out;
+
+                    &:hover{
+                        color: #FFA500;
+                        transition: 100ms ease-in-out;
+                    }
+                }
+            }
+            .second-part{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p{
+                display: none;
+                visibility: hidden;
+            }
+        }
+        
+        &-2{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: 1px solid $verydark-blue;
+            span{
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    background-image: url("../images/icon-arrow.svg");
+                    width: 18px;
+                    height: 12px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+            }
+            p{
+                display: none;
+                visibility: hidden;
+            }
+            .first-part{
+                display: flex;
+                justify-content: space-between;
+                width: 500px;                
+                align-items: center;
+                @media screen and (max-width:570px) {
+                    width: 320px;
+                }
+                h4{ 
+                    cursor: pointer;
+                    color: $verydark-blue;
+                    transition: 100ms ease-in-out;
+
+                    &:hover{
+                        color: #FFA500;
+                        transition: 100ms ease-in-out;
+                    }
+                }
+            }
+            .second-part{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        &-3{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: 1px solid $verydark-blue;
+            span{
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    background-image: url("../images/icon-arrow.svg");
+                    width: 18px;
+                    height: 12px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+            }
+            p{
+                display: none;
+                visibility: hidden;
+            }
+            .first-part{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 500px;
+                @media screen and (max-width:570px) {
+                    width: 320px;
+                }
+
+                h4{ 
+                    cursor: pointer;
+                    color: $verydark-blue;
+                    transition: 100ms ease-in-out;
+
+                    &:hover{
+                        color: #FFA500;
+                        transition: 100ms ease-in-out;
+                    }
+                }
+        
+            }
+            .second-part{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        &-4{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: 1px solid $verydark-blue;
+            span{
+                cursor: pointer;
+                &::after{
+                    content: "";
+                    background-image: url("../images/icon-arrow.svg");
+                    width: 18px;
+                    height: 12px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+            }
+            .first-part{
+                display: flex;
+                justify-content: space-between;
+                width: 500px;
+                align-items: center;
+                @media screen and (max-width:570px) {
+                    width: 320px;
+                }
+                h4{ 
+                    cursor: pointer;
+                    color: $verydark-blue;
+                    transition: 100ms ease-in-out;
+
+                    &:hover{
+                        color: #FFA500;
+                        transition: 100ms ease-in-out;
+                    }
+                }
+            }
+            .second-part{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p{
+                display: none;
+                visibility: hidden;
+            }
+        }
+    }
+    &__button{
+        margin-top: 50px;
+        a{
+            background-color: $soft-blue;
+            color: #fff;
+            font-size: 16px;
+            padding: 0.9em 2em;
+            border-radius: 10px;
+        }
+    }
+}
